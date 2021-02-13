@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 30%;
+        height: 30%;
+        }
+        body {
+
+        background-repeat: no-repeat;
+        background-position: center;
+
+        }
+        #stpwatch{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 30%;
+            height: 150%;
+            background-color: coral;
+            text-decoration: none;
+
+        }
+    
+
+    </style>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>A Years to hours calculater</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body style="background-color: #80bfff; background-image: url('https://www.macworld.co.uk/cmsdata/features/3609079/how_clear_cache_iphone_ipad_thumb800.jpg');">
+        <div style="background-color: rgba(226, 226, 226, 0.884); border-radius: 50%;">
+            <h1 style="text-align: center; color: blue;">A Years to hours calculator</h1>
+            <hr>
+            <br>
+            <H3 style="text-align: center; color: rgb(237, 100, 100);">Don't try to calculate your age in hours. You won't be able to. Instead use this calculator.</H3>
+            <h3 style="text-align: center; color: purple;">Faster than your Smartphone!</h3>
+            <h3 style="text-align: center; color: navy;">Just type in your age in years, months, and days and we'll calculate it for you. </h3>
+            <h3 style="text-align: center; color: navy;">Here is an example. You are 4 years and 3 days old. You will type 4 in years, 0 in months, and 3 in days</h3>
+            <h3 style="text-align: center; color: goldenrod;"> Click Calculate and then See Answer. If you want to do more than one calculation, reload. If you want to go to stopwatch, <br>click the button at the bottom</h3>
+            <br>
+            <p ></p>
+            <label for="Years">Years:</label><br>
+            <select name="Years" id="info1">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+                <option>32</option>
+                <option>33</option>
+                <option>34</option>
+                <option>35</option>
+                <option>36</option>
+                <option>37</option>
+                <option>38</option>
+                <option>39</option>
+                <option>40</option>
+                <option>41</option>
+                <option>42</option>
+                <option>43</option>
+                <option>44</option>
+                <option>45</option>
+                <option>46</option>
+                <option>47</option>
+                <option>48</option>
+                <option>49</option>
+                <option>50</option>
+                <option>51</option>
+                <option>52</option>
+                <option>53</option>
+                <option>54</option>
+                <option>55</option>
+                <option>56</option>
+                <option>57</option>
+                <option>58</option>
+                <option>59</option>
+                <option>60</option>
+                <option>61</option>
+                <option>62</option>
+                <option>63</option>
+                <option>64</option>
+                <option>65</option>
+                <option>66</option>
+                <option>67</option>
+                <option>68</option>
+                <option>69</option>
+                <option>70</option>
+                <option>71</option>
+                <option>72</option>
+                <option>73</option>
+                <option>74</option>
+                <option>75</option>
+                <option>76</option>
+                <option>77</option>
+                <option>78</option>
+                <option>79</option>
+                <option>80</option>
+                <option>81</option>
+                <option>82</option>
+                <option>83</option>
+                <option>84</option>
+                <option>85</option>
+                <option>86</option>
+                <option>87</option>
+                <option>88</option>
+                <option>89</option>
+                <option>90</option>
+                <option>91</option>
+                <option>92</option>
+                <option>93</option>
+                <option>94</option>
+                <option>95</option>
+                <option>96</option>
+                <option>97</option>
+                <option>98</option>
+                <option>99</option>
+                <option>100</option>
+            </select>   <br><br>
+            <label for="Months">Months:</label><br>
+            <select id="info2" name="Months">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+            </select><br><br>
+            <label for="Days">Days:</label><br>
+            <select id="info3" name="Days">
+                <option>0</option>
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+
+                </select><br><br>
+            
+            <button id="cal" style="background-color: rgb(171, 204, 50); width: 70px; height: 50px; border-radius: 10px;" onclick="ABC()">Calculate</button>
+            <br>
+            <button id="butt" type="button" class="btn btn-primary" data-toggle="modal" data-target="#myModal">
+                See answer</button>
+            <!-- The Modal -->
+            <div class="modal" id="myModal">
+                <div class="modal-dialog">
+                <div class="modal-content">
+            
+                    <!-- Modal Header -->
+                    <div class="modal-header" style="background-color: rgb(233, 197, 34);">
+                    <h4 class="modal-title">Your age in hours is...</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    </div>
+            
+                    <!-- Modal body -->
+                    <div id="Hours" class="modal-body" style="background-color: rgb(233, 197, 34);">
+                    
+                    </div>
+            
+            
+                </div>
+                </div>
+            </div>
+            <br><br>
+        <a href="stopwatch.html" target="_blank">
+            <button style="height: 50px;" id="stpwatch">Go to Stopwatch</button>
+        </a>
+        
+    </body>
+    <script >
+        x = document.getElementById('butt')
+        y = document.getElementById('cal')
+        x.style.display = 'none'
+        function ABC() {
+            var a;
+            var b;
+            var c;
+            var txt;
+            x.style.display = 'block'
+            a = document.getElementById('info1').value;
+            b = document.getElementById('info2').value;
+            c = document.getElementById('info3').value;
+            txt = (24 * 365 * a) + (24 * 30 * b) + (24 * c) + " hours";
+            document.getElementById('Hours').innerHTML = txt;
+            y.style.display = 'none'
+        }
+    
+        
+    </script>
+      <embed src="https://mahdihat791.github.io/v2/test.mp3" autostart=true hidden=true loop=true></BGSOUND>
+</html>

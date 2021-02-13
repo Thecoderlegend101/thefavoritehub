@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+     a:link {
+    text-decoration: none;
+    }
+
+    a:visited {
+    text-decoration: none;
+    }
+
+    a:hover {
+    text-decoration: underline;
+    }
+
+    a:active {
+    text-decoration: none;
+    }
+    #leftest {
+        padding-left: 800px;
+
+    }wwwww
+    td {
+        padding-left: 15px;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+</head>
+<body style="background-color: indianred;"> 
+    <h1 style="text-align: center;">STOPWATCH</h1><hr>
+    <h1 style="color: imdnightblue; text-align: center;">Click On Start to start the Stopwatch</h1>
+    <br><br>
+    <table>
+        <tr>
+            <td id="leftest">
+                <h1 style="text-align: center; color: rgb(157, 241, 31);" id="timem"></h2>
+            </td>
+            <td>
+                <h1 style="text-align: center; color: rgb(47, 189, 255);" id="times"></h2>
+            </td>
+            <td>
+                <h1 style="text-align: center; color: rgb(255, 152, 126);" id="timems"></h2>
+            </td>
+        </tr>
+    </table>
+    <br><br>
+    <button style="background-color: rgb(0, 192, 218); width: 50px; height: 50px; display: block;" onclick="stop()">Stop</button><br>
+    <button  id="s/r" style="background-color: rgb(211, 0, 98) ; width: 75px; height: 50px; " onclick="start()">Start</button><br><br>
+    <span>
+        <button style="background-color: forestgreen; width: 50px; height: 50px; " onclick="reset()">Reset</button>
+        <a href="file:///C:/Users/darsh/OneDrive/Desktop/Stuff/calculater.html" target="_blank">
+            <button style="background-color: rgb(100, 88, 202); width: 200px; height: 75px; display: block; margin-left: auto; margin-right: auto; width: 25%;" >Go to Years to Hours Calculater</button>
+        </a>
+        <br>
+        <a href="file:///C:/Users/darsh/OneDrive/Desktop/Stuff/Home.html" target="_blank">
+            <button style="background-color: rgb(100, 88, 202); width: 200px; height: 75px; display: block; margin-left: auto; margin-right: auto; width: 25%; " >Go to Home</button>
+        </a>
+    </span>
+    
+</body>
+<script>
+   
+    
+    var sec = 0;
+    var min = 0;
+    var ms = 0;
+    var minutes;
+    var seconds;
+    var millsec
+    function start() {
+        document.getElementById('s/r').innerHTML = "Start"
+        minutes = setInterval(function () { min += 1; sec = 0; ms = 0; document.getElementById('timem').innerHTML = min + ' m';}, 60000)
+        seconds = setInterval(function () { sec += 1; ms = 0; document.getElementById('times').innerHTML = sec + ' s'; document.getElementById('timem').innerHTML = min + ' m';}, 1000)
+        millsec = setInterval(function () { ms += 1; document.getElementById('timems').innerHTML = ms + ' ms';}, 1)
+
+        }
+    
+    function stop() {
+        clearInterval(minutes)
+        clearInterval(seconds)
+        clearInterval(millsec)
+        document.getElementById('s/r').innerHTML = 'Resume'
+        }
+    function reset() {
+            sec = 0
+            min = 0
+            ms = 0;
+            document.getElementById('times').innerHTML = sec + ' s';
+            document.getElementById('timem').innerHTML = min + ' m';
+            document.getElementById('timems').innerHTML = ms + ' ms';
+        }
+  
+</script>
+</html>
