@@ -1,0 +1,65 @@
+body {
+  background-color: #0093E9;
+   background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+#codeimg {
+  border-radius: 50%;
+  display: block;
+ width: 100px;
+ height: 100px;
+ margin-left: auto;
+ margin-right: auto;
+}
+.menu {
+  list-style: none;
+  font-family: cursive;
+  float: right;
+  top: 10px;
+  right: 30px;
+  cursor: pointer;
+  color: black;
+}
+#favhob {
+  font-family: 'Hanalei', cursive;
+  text-align: center;
+}
+.text {
+  text-align: center;
+}
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+.mlist {
+  float: left;
+}
+
+.mlist a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.mlist a:hover {
+  background-color: #111;
+}
+img {
+  transition: transform .2s;
+  border: 10px solid #AAAAAA;
+}
+img:hover {
+  transform: scale(0.9);
+}
+#cc {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  
+}
